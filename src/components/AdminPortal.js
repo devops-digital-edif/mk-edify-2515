@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 import './AdminPortal.css';
 
 const courses = [
-  { title: 'AWS', image: '/images/aws.jpg' },
-  { title: 'Azure', image: '/images/azure.jpg' },
-  { title: 'DevOps', image: '/images/devops.jpg' },
-  { title: 'AI', image: '/images/ai.jpg' },
-  { title: 'ML Ops', image: '/images/mlops.jpg' },
-  { title: 'Python', image: '/images/python.jpg' },
-  { title: 'Data Engg', image: '/images/dataengg.png' },
-  { title: 'Java', image: '/images/java.jpg' },
-  { title: 'ReactJS', image: '/images/reactjs.jpg' }
+  { title: 'AWS', image: './images/aws.jpg' },
+  { title: 'Azure', image: './images/azure.jpg' },
+  { title: 'DevOps', image: './images/devops.jpg' },
+  { title: 'AI', image: './images/ai.jpg' },
+  { title: 'ML Ops', image: './images/mlops.jpg' },
+  { title: 'Python', image: './images/python.jpg' },
+  { title: 'Data Engg', image: './images/dataengg.png' },
+  { title: 'Java', image: './images/java.jpg' },
+  { title: 'ReactJS', image: './images/reactjs.jpg' }
 ];
 
 const AdminPortal = () => (
