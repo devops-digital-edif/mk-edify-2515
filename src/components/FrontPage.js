@@ -52,7 +52,7 @@ const FrontPage = () => {
       </div>
 
       <div className="login-right">
-        <img src="/images/login-banner.png" alt="Login Banner" />
+        <img src="./images/login-banner.png" alt="Login Banner" />
         <div className="overlay-text">Edify</div>
       </div>
     </div>
