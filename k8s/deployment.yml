@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: edify-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: edify
+  template:
+    metadata:
+      labels:
+        app: edify
+    spec:
+      containers:
+        - name: edify
+          image: murali1103/edify
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
