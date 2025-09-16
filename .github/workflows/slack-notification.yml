@@ -1,0 +1,8 @@
+name: Slack Notification
+on: workflow_dispatch
+jobs:
+  notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Slack Notification
+        run: echo "Slack Notification Sent"
