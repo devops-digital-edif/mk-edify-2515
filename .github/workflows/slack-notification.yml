@@ -5,4 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Slack Notification
-        run: echo "Slack Notification Sent"
+        uses: slackapi/slack-github-action@v2.1.1
+        with:
+          webhook: ${{secrets.SLACK_WEBHOOK}}
+          webhook-type: incoming-webhook
+          payload: |
+            channel: github-actions
+            text: "Mk Edify Workflow Triggered, Workflow Run No: $GITHUB_RUN_NUMBER	"
