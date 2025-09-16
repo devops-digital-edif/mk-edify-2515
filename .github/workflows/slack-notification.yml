@@ -12,3 +12,9 @@ jobs:
           payload: |
             channel: github-actions
             text: "Mk Edify Workflow Triggered, Workflow Run No: ${{ github.run_number }}"
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing
+        run: echo " testing is completed "
+            
